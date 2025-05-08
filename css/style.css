@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+html:root {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top {
+    margin-top: 2em;
+    font-size: 3.5rem;
+    color: rgb(223, 3, 113);
+    display: inline;
+    text-align: center;
+}
+
+main {
+    border-radius: 3px;
+    margin: 4em 3em 0 3em;
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+
+.contacts-container {
+    background-color: rgb(223, 3, 113);
+    overflow-y: scroll;
+    border-radius: 2em;
+    height: 700px;
+    width: 50%;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.486);
+    padding-bottom: 2em;
+}
+
+.contacts-container .tools {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 3em 2em 3em 2em;
+}
+
+.contacts-container .tools button{
+    border-radius: 50px;
+}
+
+.contacts-container .tools button:hover {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.342);
+}
+
+.contacts-container .tools .search-btn:hover {
+    box-shadow: none;
+    border-radius: none;
+}
+
+.contacts-container .search-btn {
+    margin-right: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contacts-container .search-btn input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.472);
+    font-family: inherit;
+    width: 80%;
+}
+
+.contacts-container .search-btn input:focus {
+    outline: none;
+}
+
+.contacts-container .search-btn .fa-search {
+    cursor: pointer;
+    width: 15%;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.contacts-container button i, .contacts-container .search-btn i {
+    padding: 0.2em;
+}
+
+.contacts-container button{
+    border-radius: 4px;
+}
+
+.contacts-container .search-btn {
+    border-radius: 50px;
+    padding: 0 0.5em 0.1em 0;
+}
+
+/* hovering the tools buttons  */
+
+.contacts-container .plus-btn:hover {
+    color: rgb(20, 165, 20);
+}
+
+.contacts-container .trash-btn:hover {
+    color: rgb(235, 41, 41);
+}
+
+.contacts-container .save-btn:hover {
+    color: rgb(255, 157, 0);
+}
+
+.contacts-container .search-btn:hover {
+    color: rgb(0, 162, 255);
+}
+
+.contacts-container button:focus {
+    outline: none;
+}
+
+.contacts-container .row {
+    padding: 1.3em 0 1.3em 0.4em;
+    border-bottom: 1px solid rgba(83, 82, 82, 0.637);
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin: 1.2em 2em 0 1em;
+    color: black;
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.65);
+}
+
+.contacts-container .contacts-header {
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin: 0 2em 0 4em;
+    color: white;
+    font-size: 1rem;
+}
+
+.contacts-container .row div{
+    width: 25%;
+}
+
+.contacts-container .contacts-header h1{
+    width: 25%;
+}
+
+.contacts-container .edt-btn:focus {
+    color: rgb(255, 208, 0);
+}
+
+.contacts-container .row button {
+    border: none;
+    font-size: 2rem;
+    background: #FFFFFF;
+}
+
+.contacts-container .row button:hover {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.342);
+    border-radius: 50px;
+}
+
+.contacts-container button {
+    border: none;
+    font-size: 2rem;
+    background: #FFFFFF;
+    color: #5c5959;
+}
+
+form {
+    width: 30%;
+    float: left;
+    border-radius: 3em;
+    box-shadow: 0 0 20 20px rgba(0, 0, 0, 0.486);
+    overflow: hidden;
+    padding-bottom: 2em;
+    opacity: 0.9;
+    background: #e9e9e9;
+    padding: 3em 4em;
+    margin-top: 9em;
+    display: none;
+}
+
+form h1 {
+    color: black;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: 0.5em 0 0.5em 0;
+    color: black;
+    margin-top: 0.3em;
+}
+
+form .form-control span {
+    font-size: 1.3rem;
+}
+
+form .form-control #failed {
+    color: rgb(233, 17, 17);
+}
+
+form .form-control #success {
+    color: rgb(22, 195, 22);
+}
+
+form input {
+    margin-top: 0.5em;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 4em;
+    background-color: #FFFFFF;
+}
+
+.form-control input:focus {
+    outline: none;
+    background-color: #000000;
+    transition: 1s;
+    color: #FFFFFF;
+}
+
+form .save-cancel-btns {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+form .save-cancel-btns input {
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(255, 255, 255, 0.205);
+    color: black;
+}
+
+form .save-cancel-btns input:hover {
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+    box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.4);
+}
+
+form .save-cancel-btns input:focus {
+    outline: none;
+}
+
+input, button {
+    cursor: pointer;
+}
+
+form .save-cancel-btns .hide-change {
+    display: none;
+}
+
+form .msg-success {
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-top: 3em;
+    background-color: rgb(31, 233, 31);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.623);
+    border-radius: 10px;
+    padding: 0.3em;
+}
+
+@media (max-width: 1250px){
+    
+    .top {
+        font-size: 4.5rem;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form, .contacts-container {
+        width: 80%;
+    }
+
+    form h1 {
+        font-size: 3rem;
+    }
+
+    form input {
+        font-size: 2.2rem;
+    }
+
+    .form-control label {
+        font-size: 2.6rem;
+    }
+
+    .contacts-container{
+        width: 100%;
+    }
+
+    .contacts-container button, .contacts-container .row{
+        font-size: 2.1rem;
+    }
+
+    .contacts-container .contacts-header {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 858px){
+
+    .top {
+        font-size: 3.5rem;
+    }
+
+    .form-control label {
+        font-size: 2.2rem;
+    }
+
+    .contacts-container button, .contacts-container .row{
+        font-size: 1.8rem;
+    }
+
+    .contacts-container .contacts-header {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/504137a915.js" crossorigin="anonymous"></script>
+    <title>Contacts App</title>
+</head>
+<body>
+
+    <h1 class="top">Contacts App</h1>
+
+    <main>
+
+        <form id="form">
+            <h1>Contact Details</h1>
+            <div class="form-control">
+                <label for="nameInput">Name:</label><br><span id="msgName"></span>
+                <input type="text" id="nameInput" placeholder="ex: John">
+            </div>
+            
+            <div class="form-control">
+                <label for="phoneInput">Phone number:</label><br><span id="msgPhone"></span>
+                <input type="text" id="phoneInput" placeholder="ex: 0545967845">
+            </div>
+    
+            <div class="form-control">
+                <label for="addressInput">Address:</label><br><span id="msgAddress"></span>
+                <input type="text" placeholder="ex: Tel-Aviv ..." id="addressInput">
+            </div>
+    
+            <div class="save-cancel-btns">
+                <input class="hide-change" type="submit" value="Save changes" id="changeInput">
+                <input type="submit" value="Add contact" id="saveInput">
+                <input type="button" value="Cancel" id="cancelInput">
+            </div>
+            <span class = "msg-success" id="msgSuccess"></span>
+            
+        </form>
+
+        <div class="contacts-container" id="mainContainer">
+            <div class="tools">
+                <div class="search-btn" id="btnSearch"><i class="fas fa-search" id="iconSearch"></i><input type="search" id="searchInput"></div>
+                <button class="plus-btn" id="addUser"><i class="fas fa-user-plus"></i></button>
+                <button class="trash-btn" id="clearAll"><i class="fas fa-trash-alt" id="iconClearAll"></i></button>
+                <button class="save-btn" id="saveAll"><i class="far fa-save"></i></button>
+            </div>
+    
+            <div class="table" id="contactsTable">
+                <div class="contacts-header">
+                    <h1>Name</h1>
+                    <h1>Phone Number</h1>
+                    <h1>Address</h1>
+                    <h1>Tools</h1>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
